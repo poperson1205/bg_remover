@@ -1,0 +1,11 @@
+<head>
+    <title>Background Remover</title>
+</head>
+<body>
+    <h1>Remove background of your images</h1>
+    <form action="" enctype="multipart/form-data" method="POST" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
